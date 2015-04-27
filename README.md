@@ -16,3 +16,7 @@ INFO: From ObjcCompile src/main/objc/_objs/objc/src/main/objc/Usage.o:
 src/main/objc/Usage.m:2:9: fatal error: 'example/Header.h' file not found
 #import <example/Header.h>
 ```
+
+# Example lib does work if stored locally
+
+Uncomment line 10 of `src/main/objc/BUILD` to see that storing the example lib locally does compile properly.
