@@ -6,6 +6,8 @@ Example project that exposes the flaw in using http_archive with objc_library
 Link tools from bazel installation:
 `ln -s /bazel/install/tools/ tools`
 
+Upload `example_lib.zip` to an accessible server. Update the URL and sha256 in `WORKSPACE` (when I tried using github as the storage server it failed, it seems the sha256 of a github file changes every time you access it).
+
 Run build: `bazel build //src/main/objc`
 
 See failure: 
